@@ -1,0 +1,35 @@
+body {
+    background: #2193b0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #6dd5ed, #2193b0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#file {
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    height: 40vh;
+}
+
+.controller {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    height: 10vh;
+}
+
+.slider {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.output {
+    overflow: auto;
+    height: 47vh;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>TTS</title>
+</head>
+
+<body>
+    <input type="file" id="file" accept=".txt">
+    <div class="container">
+        <button id="import">Import Text File</button>
+        <select id="voices"></select>
+        <div class="slider">
+            <p id="rate_label">10</p>
+            <input id="rate" type="range" min="1" max="100" value="10">
+        </div>
+        <div class="slider">
+            <p id="pitch_label">1</p>
+            <input id="pitch" type="range" min="0" max="2" value="1">
+        </div>
+    </div>
+    <div class="controller">
+        <button id="speak"><i class="fas fa-play"></i></button>
+        <button id="pause"><i class="fas fa-pause"></i></button>
+        <button id="cancel"><i class="fas fa-stop"></i></button>
+    </div>
+    <div class="output">
+        
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <script src="cordova.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
