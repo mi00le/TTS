@@ -1,11 +1,15 @@
 # TTS
 
-Takes a .txt file and reads the content
+Takes txt/pdf files and uses text-to-speech and reads out the content
 
-# Build Android App
+
+# How to Build The App
 
 You need have Cordova installed
+- cordova platform add android
+- cordova plugin add cordova-plugin-tts-advanced
 - cordova build android
 
-# View in the browser
+# To view in the browser
+- cordova platform add browser
 - cordova serve
