@@ -1,14 +1,18 @@
 body {
-    background: #2193b0;
+    background: #150485;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #6dd5ed, #2193b0);
+    background: -webkit-linear-gradient(to top, #150485, #590995);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+    background: linear-gradient(to bottom, #150485, #590995);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #file {
     display: none;
+}
+#voices{
+    background-color: #590995;
+    color: white;
 }
 
 .container {
@@ -26,10 +30,21 @@ body {
 
 .slider {
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 20% 80%;
 }
 
 .output {
     overflow: auto;
-    height: 47vh;
+    height: 43vh;
+    color: white;
+    margin-top: 20px;
+}
+#import{
+    color: white;
+}
+button {
+    background-color: #590995;
+}
+p{
+    color: white;
 }

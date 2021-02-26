@@ -17,27 +17,31 @@
 </head>
 
 <body>
-    <input type="file" id="file" accept=".txt">
+    <input type="file" id="file" accept=".txt,.pdf">
     <div class="container">
         <button id="import">Import Text File</button>
         <select id="voices"></select>
         <div class="slider">
-            <p id="rate_label">10</p>
+            <p id="rate_label">Speed: 10</p>
             <input id="rate" type="range" min="1" max="100" value="10">
         </div>
         <div class="slider">
-            <p id="pitch_label">1</p>
+            <p id="pitch_label">Pitch: 1</p>
             <input id="pitch" type="range" min="0" max="2" value="1">
         </div>
     </div>
     <div class="controller">
-        <button id="speak"><i class="fas fa-play"></i></button>
+        <button id="speak" style="background-color: #03c4a1;"><i class="fas fa-play"></i></button>
         <button id="pause"><i class="fas fa-pause"></i></button>
-        <button id="cancel"><i class="fas fa-stop"></i></button>
+        <button id="cancel" style="background-color: #c62a88;"><i class="fas fa-stop"></i></button>
     </div>
     <div class="output">
         
     </div>
+
+    <script src="js/pdf.min.js" ></script>
+    <script src="js/pdf.worker.entry.min.js"></script>
+    <script src="js/pdf.worker.min.js" ></script>
 
     <script src="js/jquery-3.5.1.min.js"></script>
 
