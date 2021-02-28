@@ -9,7 +9,3 @@ You need to have Cordova installed
 - cordova platform add android
 - cordova plugin add cordova-plugin-tts-advanced
 - cordova build android
-
-# To view in the browser
-- cordova platform add browser
-- cordova serve
