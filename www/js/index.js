@@ -5,28 +5,6 @@ document.addEventListener('deviceready', function () {
     //Add path to pdf.worker
     pdfjsLib.GlobalWorkerOptions.workerSrc = './pdf.worker.min.js';
 
-
-    //Check if speechSynthesis is in window
-    // if ('speechSynthesis' in window) {
-    //     msg = document.createElement('h5');
-    //     msg.textContent = "Speech Synthesis support Detected";
-    //     msg.style.textAlign = 'center';
-    //     msg.style.backgroundColor = 'green';
-    //     msg.style.color = 'white';
-    //     msg.style.marginTop = msg.style.marginBottom = 0;
-    //     document.body.insertBefore(msg, document.querySelector('.container'));
-    // }
-    // else {
-    //     msg = document.createElement('h5');
-    //     msg.textContent = "Detected no support for Speech Synthesis";
-    //     msg.style.textAlign = 'center';
-    //     msg.style.backgroundColor = 'red';
-    //     msg.style.color = 'white';
-    //     msg.style.marginTop = msg.style.marginBottom = 0;
-    //     document.body.insertBefore(msg, document.querySelector('.container'));
-    // }
-
-
     var $voicelist = $('#voices');
     TTS
         .getVoices().then(function (voices) {
@@ -45,8 +23,6 @@ document.addEventListener('deviceready', function () {
 
 
     $('#speak').click(function () {
-
-
 
         if ($('#file').val() == "") {
             alert("No File Selected!")
@@ -88,14 +64,9 @@ document.addEventListener('deviceready', function () {
 
                     var text = fr.result;
                     read_out_txt(text)
-
-
-
                 }
                 fr.readAsText(file.files[0]);
             }
-
-
         }
     })
 
